@@ -1,0 +1,19 @@
+<ion-view title="Login" hide-back-button="true">
+    <ion-content has-bouncing="false">
+        <form class="loginForm">
+            <div class="list">
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">User Name</span>
+                    <input type="text" name="loginForm.uname" placeholder="User Name" required ng-model="loginData.uname">
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Password</span>
+                    <input type="password" name="loginForm.upass" placeholder="Password" required ng-model="loginData.upass">
+                </label>
+            </div>
+            <center>
+                <button class="button button-positive" ng-disabled="loginForm.$invalid" ng-click="login()">LOGIN</button>
+            </center>
+        </form>
+    </ion-content>
+</ion-view>
